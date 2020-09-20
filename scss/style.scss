@@ -1,4 +1,39 @@
 @import "config.scss";
 body {
+  overflow-x: hidden;
   background-color: $bodybg-color;
+  .side-nav {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    top: 0;
+    right: -60px;
+    bottom: 0;
+    // float: right;
+    width: 60px;
+  }
+  main {
+    position: relative;
+    left: 0px;
+    right: 60px;
+    display: grid;
+    grid-template: 1fr / auto;
+    grid-template-areas:
+      "hero"
+      "about"
+      "legal"
+      "why us"
+      "consultation"
+      "partners"
+      "testimonial"
+      "contact"
+      "articles"
+      "partners"
+      "footer";
+    .container {
+      min-height: 50vh;
+      width: 100%;
+    }
+  }
 }
