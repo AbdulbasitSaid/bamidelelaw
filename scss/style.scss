@@ -1,22 +1,42 @@
 @import "config.scss";
+$sideNavWidth: 250px;
+
 body {
   overflow-x: hidden;
   background-color: $bodybg-color;
-  .side-nav {
+  .app {
+    transition: 0.5s cubic-bezier(0.91, 0.06, 0.47, 1.05) transform;
+  }
+  .app .side-nav {
+    height: 100vh;
+    float: right;
+    right: 0;
+    // top: 0;
+    // bottom: 0;
     position: absolute;
     background-color: black;
     color: white;
     padding: 1rem;
-    top: 0;
-    right: -60px;
-    bottom: 0;
-    // float: right;
-    width: 60px;
+    width: $sideNavWidth;
+    transition: 0.5s ease;
+    z-index: -1;
+    // display: none;
+    transform: translateX($sideNavWidth);
+  }
+  .app.show-nav {
+    transform: translateX(-$sideNavWidth);
+  }
+  .btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    color: $primary-color;
   }
   main {
+    z-index: 1;
     position: relative;
-    left: 0px;
-    right: 60px;
     display: grid;
     grid-template: 1fr / auto;
     grid-template-areas:

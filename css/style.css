@@ -11,21 +11,40 @@ body {
   background-color: #fff;
 }
 
-body .side-nav {
+body .app {
+  transition: 0.5s cubic-bezier(0.91, 0.06, 0.47, 1.05) transform;
+}
+
+body .app .side-nav {
+  height: 100vh;
+  float: right;
+  right: 0;
   position: absolute;
   background-color: black;
   color: white;
   padding: 1rem;
-  top: 0;
-  right: -60px;
-  bottom: 0;
-  width: 60px;
+  width: 250px;
+  transition: 0.5s ease;
+  z-index: -1;
+  transform: translateX(250px);
+}
+
+body .app.show-nav {
+  transform: translateX(-250px);
+}
+
+body .btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  color: #b1976b;
 }
 
 body main {
+  z-index: 1;
   position: relative;
-  left: 0px;
-  right: 60px;
   display: grid;
   grid-template: 1fr / auto;
   grid-template-areas: "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
