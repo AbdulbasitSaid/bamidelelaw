@@ -53,24 +53,7 @@ body .btn {
   color: #b1976b;
 }
 
-body main {
-  z-index: 1;
-  position: relative;
-  display: grid;
-  grid-template: 1fr / auto;
-  grid-template-areas: "navbar" "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
-}
-
-body main .container {
-  min-height: 50vh;
-  width: 100%;
-}
-
-body main #navbar {
-  grid-area: navbar;
-}
-
-body main #navbar .navbar {
+body .navbar {
   padding: 10px 1rem;
   display: flex;
   right: 0;
@@ -82,17 +65,17 @@ body main #navbar .navbar {
   background-color: #555555;
 }
 
-body main #navbar .navbar .bana {
+body .navbar .bana {
   display: block;
 }
 
-body main #navbar .navbar .bana img {
+body .navbar .bana img {
   width: 50px;
   height: 50px;
   display: block;
 }
 
-body main #navbar .navbar .nav-btn {
+body .navbar .nav-btn {
   width: 50px;
   height: 50px;
   display: block;
@@ -101,14 +84,57 @@ body main #navbar .navbar .nav-btn {
   background-color: #fff;
 }
 
+body main {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-column: auto;
+  grid-template-areas: "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
+}
+
+body main .container {
+  min-height: 50vh;
+  width: 100%;
+}
+
 body main #hero {
   grid-area: hero;
 }
 
 body main #about {
-  grid-area: hero;
+  grid-area: about;
 }
 
 body main #legal {
   grid-area: legal;
+}
+
+body main #why-us {
+  grid-area: why-us;
+}
+
+body main #consultation {
+  grid-area: consultation;
+}
+
+body main #partners {
+  grid-area: partners;
+}
+
+body main #testimonial {
+  grid-area: testimonial;
+}
+
+body main #contact {
+  grid-area: contact;
+}
+
+body main #articles {
+  grid-area: articles;
+}
+
+body main #footer {
+  grid-area: footer;
 }

@@ -42,14 +42,41 @@ body {
     margin: 10px;
     color: $primary-color;
   }
-
+  .navbar {
+    padding: 10px 1rem;
+    display: flex;
+    right: 0;
+    left: 0;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    background-color: $text-color;
+    .bana {
+      display: block;
+      img {
+        width: 50px;
+        height: 50px;
+        display: block;
+      }
+    }
+    .nav-btn {
+      width: 50px;
+      height: 50px;
+      display: block;
+      border: solid 2px $text-color;
+      border-radius: 4px;
+      background-color: $bodybg-color;
+    }
+  }
   main {
+    width: 100%;
     z-index: 1;
     position: relative;
     display: grid;
-    grid-template: 1fr / auto;
+    grid-template-columns: 100vw;
+    grid-column: auto;
     grid-template-areas:
-      "navbar"
       "hero"
       "about"
       "legal"
@@ -65,44 +92,36 @@ body {
       min-height: 50vh;
       width: 100%;
     }
-    #navbar {
-      grid-area: navbar;
-      .navbar {
-        padding: 10px 1rem;
-        display: flex;
-        right: 0;
-        left: 0;
-        position: fixed;
-        flex-direction: row;
-        align-items: center;
-        align-content: space-between;
-        background-color: $text-color;
-        .bana {
-          display: block;
-          img {
-            width: 50px;
-            height: 50px;
-            display: block;
-          }
-        }
-        .nav-btn {
-          width: 50px;
-          height: 50px;
-          display: block;
-          border: solid 2px $text-color;
-          border-radius: 4px;
-          background-color: $bodybg-color;
-        }
-      }
-    }
+
     #hero {
       grid-area: hero;
     }
     #about {
-      grid-area: hero;
+      grid-area: about;
     }
     #legal {
       grid-area: legal;
+    }
+    #why-us {
+      grid-area: why-us;
+    }
+    #consultation {
+      grid-area: consultation;
+    }
+    #partners {
+      grid-area: partners;
+    }
+    #testimonial {
+      grid-area: testimonial;
+    }
+    #contact {
+      grid-area: contact;
+    }
+    #articles {
+      grid-area: articles;
+    }
+    #footer {
+      grid-area: footer;
     }
   }
 }
