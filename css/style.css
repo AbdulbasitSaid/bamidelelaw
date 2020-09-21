@@ -24,13 +24,24 @@ body .app .side-nav {
   color: white;
   padding: 1rem;
   width: 250px;
-  transition: 0.5s ease;
+  transition: 0.5s ease transform;
   z-index: -1;
   transform: translateX(250px);
 }
 
 body .app.show-nav {
   transform: translateX(-250px);
+}
+
+body .app.show-nav:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
 }
 
 body .btn {
@@ -53,4 +64,10 @@ body main {
 body main .container {
   min-height: 50vh;
   width: 100%;
+}
+
+body main .navbar {
+  height: 4rem;
+  padding: 10px;
+  display: flex;
 }
