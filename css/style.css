@@ -58,7 +58,7 @@ body main {
   position: relative;
   display: grid;
   grid-template: 1fr / auto;
-  grid-template-areas: "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
+  grid-template-areas: "navbar" "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
 }
 
 body main .container {
@@ -66,8 +66,49 @@ body main .container {
   width: 100%;
 }
 
-body main .navbar {
-  height: 4rem;
-  padding: 10px;
+body main #navbar {
+  grid-area: navbar;
+}
+
+body main #navbar .navbar {
+  padding: 10px 1rem;
   display: flex;
+  right: 0;
+  left: 0;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  background-color: #555555;
+}
+
+body main #navbar .navbar .bana {
+  display: block;
+}
+
+body main #navbar .navbar .bana img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+body main #navbar .navbar .nav-btn {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: solid 2px #555555;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+body main #hero {
+  grid-area: hero;
+}
+
+body main #about {
+  grid-area: hero;
+}
+
+body main #legal {
+  grid-area: legal;
 }
