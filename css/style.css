@@ -53,45 +53,9 @@ body .btn {
   color: #b1976b;
 }
 
-body .navbar {
-  padding: 10px 1rem;
-  display: flex;
-  right: 0;
-  left: 0;
-  position: fixed;
-  flex-direction: row;
-  align-items: center;
-  align-content: space-between;
-  background-color: #555555;
-}
-
-body .navbar .bana {
-  display: block;
-}
-
-body .navbar .bana img {
-  width: 50px;
-  height: 50px;
-  display: block;
-}
-
-body .navbar .nav-btn {
-  width: 50px;
-  height: 50px;
-  display: block;
-  border: solid 2px #555555;
-  border-radius: 4px;
-  background-color: #fff;
-}
-
 body main {
-  width: 100%;
   z-index: 1;
   position: relative;
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-column: auto;
-  grid-template-areas: "hero" "about" "legal" "why us" "consultation" "partners" "testimonial" "contact" "articles" "partners" "footer";
 }
 
 body main .container {
@@ -99,42 +63,60 @@ body main .container {
   width: 100%;
 }
 
-body main #hero {
-  grid-area: hero;
+body main #navbar .navbar {
+  padding: 10px 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 
-body main #about {
-  grid-area: about;
+body main #navbar .navbar .bana {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #fff;
 }
 
-body main #legal {
-  grid-area: legal;
+body main #navbar .navbar .bana img {
+  width: 50px;
+  height: 50px;
+  display: block;
 }
 
-body main #why-us {
-  grid-area: why-us;
+body main #navbar .navbar .nav-btn {
+  display: grid;
+  padding: 4px;
+  justify-content: center;
+  float: right;
+  color: #000;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: solid 2px #555555;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 30px;
 }
 
-body main #consultation {
-  grid-area: consultation;
+body main #hero .hero {
+  background-size: cover;
+  background-image: url(" https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  height: 70vh;
 }
 
-body main #partners {
-  grid-area: partners;
+body main #about .about {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
-body main #testimonial {
-  grid-area: testimonial;
-}
-
-body main #contact {
-  grid-area: contact;
-}
-
-body main #articles {
-  grid-area: articles;
-}
-
-body main #footer {
-  grid-area: footer;
+body main #about .about .about-content {
+  background-color: green;
+  position: absolute;
+  height: 70vh;
+  width: 50vw;
 }
