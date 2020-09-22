@@ -304,6 +304,17 @@ img {
     font-weight: 100;
     padding: 1rem;
   }
+  p {
+    color: white;
+    padding: 1.6rem;
+    font-weight: 600;
+    text-align: start;
+  }
+  .counting {
+    .number {
+      font-size: 100px;
+    }
+  }
   display: flex;
   flex-flow: column;
   align-items: center;

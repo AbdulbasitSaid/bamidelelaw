@@ -358,6 +358,17 @@ img {
   padding: 1rem;
 }
 
+.why-us p {
+  color: white;
+  padding: 1.6rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.why-us .counting .number {
+  font-size: 100px;
+}
+
 @keyframes hamburger_puls {
   0% {
     opacity: 1;
