@@ -172,8 +172,7 @@ img {
     font-weight: lighter;
     padding: 20px 0px;
   }
-  background-size: cover;
-  background-position: top center;
+
   background-image: url("/img/slider-1.jpg");
   z-index: 1;
   &:after {
@@ -193,12 +192,12 @@ img {
   position: relative;
   justify-content: center;
   .about-content {
-    padding: 10px 20px;
+    padding: 20px;
     border-radius: 4px;
     position: absolute;
     min-height: 50vh;
     width: 80vw;
-    transform: translateY(-2em);
+    transform: translateY(-3rem);
     z-index: 2;
     text-align: start;
 
@@ -283,7 +282,14 @@ img {
     }
   }
 }
-
+.bg {
+  background-size: cover;
+  background-position: center;
+}
+.why-us {
+  min-height: 100vh;
+  background: url("/img/why-us.jpg") no-repeat;
+}
 // animations
 @keyframes hamburger_puls {
   0% {
