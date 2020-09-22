@@ -203,6 +203,7 @@ img {
 .about .about-content .signature img {
   display: block;
   width: 200px;
+  margin: 20px;
 }
 
 .about .about-content p {
@@ -211,6 +212,7 @@ img {
 
 .about .about-content .ceo {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about .about-content .heading {
@@ -235,7 +237,19 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
   padding: 0 4rem;
+}
+
+.legal h2 {
+  font-size: medium;
+  color: #555555;
+}
+
+.legal h1 {
+  color: #000;
+  padding: 1rem 0 6rem 0;
+  text-transform: capitalize;
 }
 
 .legal .legal-card {
@@ -245,13 +259,13 @@ img {
 
 .legal .legal-card h2 {
   color: #555555;
-  font-size: small;
+  font-size: medium;
   text-align: center;
   margin: 20px;
 }
 
 .legal .legal-card p {
-  font-size: medium;
+  font-size: large;
   font-weight: 400;
 }
 
@@ -268,5 +282,6 @@ img {
   text-transform: uppercase;
   text-align: center;
   font-size: medium;
+  font-weight: bold;
   margin: 20px;
 }

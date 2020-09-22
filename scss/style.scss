@@ -163,6 +163,7 @@ img {
     transform: translateY(-5rem);
     z-index: 2;
     text-align: start;
+
     .signature {
       padding: 20px;
       display: flex;
@@ -172,6 +173,7 @@ img {
       img {
         display: block;
         width: 200px;
+        margin: 20px;
       }
     }
     p {
@@ -179,6 +181,7 @@ img {
     }
     .ceo {
       text-align: center;
+      text-transform: uppercase;
     }
     .heading {
       padding: 30px 0;
@@ -201,18 +204,28 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
   padding: 0 4rem;
+  h2 {
+    font-size: medium;
+    color: $text-color;
+  }
+  h1 {
+    color: #000;
+    padding: 1rem 0 6rem 0;
+    text-transform: capitalize;
+  }
   .legal-card {
     display: flex;
     flex-flow: column;
     h2 {
       color: $text-color;
-      font-size: small;
+      font-size: medium;
       text-align: center;
       margin: 20px;
     }
     p {
-      font-size: medium;
+      font-size: large;
       font-weight: 400;
     }
     img {
@@ -227,6 +240,7 @@ img {
       text-transform: uppercase;
       text-align: center;
       font-size: medium;
+      font-weight: bold;
       margin: 20px;
     }
   }
