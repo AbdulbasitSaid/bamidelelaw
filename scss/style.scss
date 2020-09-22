@@ -31,8 +31,21 @@ h2 {
 img {
   background-repeat: no-repeat;
 }
+.app {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
+}
 .app.show-nav {
-  transform: translateX();
+  transform: translateX(-$side-nav-width);
+}
+.side-nav {
+  height: 100vh;
+  top: 0;
+  float: right;
+  right: -$side-nav-width;
+  width: $side-nav-width;
+  background-color: $text-color;
+  position: absolute;
+  z-index: 100;
 }
 .container {
   min-height: 70vh;

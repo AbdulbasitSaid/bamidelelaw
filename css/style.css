@@ -45,8 +45,23 @@ img {
   background-repeat: no-repeat;
 }
 
+.app {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
+}
+
 .app.show-nav {
-  transform: translateX();
+  transform: translateX(-250px);
+}
+
+.side-nav {
+  height: 100vh;
+  top: 0;
+  float: right;
+  right: -250px;
+  width: 250px;
+  background-color: #555555;
+  position: absolute;
+  z-index: 100;
 }
 
 .container {
