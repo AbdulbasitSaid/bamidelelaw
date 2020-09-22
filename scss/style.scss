@@ -173,6 +173,7 @@ img {
     padding: 20px 0px;
   }
   background-size: cover;
+  background-position: top center;
   background-image: url("/img/slider-1.jpg");
   z-index: 1;
   &:after {

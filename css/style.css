@@ -154,6 +154,7 @@ img {
   justify-content: center;
   gap: 2rem;
   background-size: cover;
+  background-position: top center;
   background-image: url("/img/slider-1.jpg");
   z-index: 1;
 }
