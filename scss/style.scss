@@ -43,46 +43,67 @@ img {
   padding: 10px;
   width: 100%;
   display: flex;
-  align-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 2rem;
   .bana {
     height: 50px;
     img {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
     }
   }
   .nav-btn {
-    position: absolute;
-    float: right;
-    right: 0;
-    margin-right: 2rem;
-    border: solid $text-color 1.5px;
-    width: 40px;
-    height: 40px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 3px solid $text-color;
+    border-radius: 2px;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    padding: 6px;
-    .bar {
-      position: relative;
-      z-index: -1;
-      height: 2px;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+    margin-right: 20px;
+    &:after {
+      position: absolute;
+      content: "";
+      height: 100%;
       width: 100%;
+      border-radius: 2px;
+      border: 3px solid $text-color;
+      animation: hamburger_puls 1s ease infinite;
+    }
+    .bar {
+      height: 2px;
+      width: 30px;
+      position: relative;
       background-color: $text-color;
-      &:before {
-        position: absolute;
-        top: 2;
-        height: 2px;
-        width: 100%;
-        background-color: $text-color;
-        z-index: 1;
-      }
+      z-index: -1;
+    }
+    .bar::after,
+    .bar::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      background-color: $text-color;
+      transition: 0.3s ease;
+      transition-property: top, bottom;
+    }
+    .bar::after {
+      top: 8px;
+    }
+    .bar::before {
+      bottom: 8px;
     }
   }
 }
 .hero {
+  height: 80vh;
   p {
     color: white;
   }
@@ -136,7 +157,7 @@ img {
     padding: 20px 0px;
   }
   background-size: cover;
-  background-image: url("/img/hero.jpg");
+  background-image: url("/img/slider-1.jpg");
   z-index: 1;
   &:after {
     content: "";
@@ -146,7 +167,7 @@ img {
     top: 0;
     left: 0;
     background-color: #000;
-    opacity: 0.9;
+    opacity: 0.2;
     z-index: -1;
   }
 }
