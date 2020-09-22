@@ -159,7 +159,7 @@ img {
     background-image: linear-gradient(
       to bottom,
       $primary-color,
-      rgba($color: $primary-color, $alpha: 0.6)
+      rgba($color: $primary-color, $alpha: 0.9)
     );
     text-transform: uppercase;
     border-radius: 4px;
@@ -178,20 +178,10 @@ img {
     padding: 20px 0px;
   }
 
-  background-image: url("/img/slider-1.jpg");
+  background-image: url("/img/hero.jpg");
   z-index: 1;
-  &:after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    opacity: 0.2;
-    z-index: -1;
-  }
 }
+
 .about {
   display: flex;
   position: relative;
@@ -292,6 +282,8 @@ img {
   background-position: center;
 }
 .why-us {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   padding: 4rem 2rem;
   h1 {
@@ -311,14 +303,32 @@ img {
     text-align: start;
   }
   .counting {
-    .number {
-      font-size: 100px;
+    align-items: center;
+
+    .numbers {
+      font-size: 48px;
+      color: white;
+    }
+    p {
+      color: $primary-color;
     }
   }
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: url("/img/why-us.jpg") no-repeat;
+  background: url("/img/why.jpg") no-repeat;
+}
+.hero::after,
+.why-us::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: -1;
 }
 // animations
 @keyframes hamburger_puls {

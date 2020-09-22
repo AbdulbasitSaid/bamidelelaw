@@ -7,10 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-* div {
-  background-color: #fff;
-}
-
 body {
   overflow-x: hidden;
   font-family: "Poppins,arial";
@@ -159,7 +155,7 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  background-image: url("/img/slider-1.jpg");
+  background-image: url("/img/hero.jpg");
   z-index: 1;
 }
 
@@ -189,7 +185,7 @@ img {
   text-align: center;
   width: 200px;
   align-self: center;
-  background-image: linear-gradient(to bottom, #b1976b, rgba(177, 151, 107, 0.6));
+  background-image: linear-gradient(to bottom, #b1976b, rgba(177, 151, 107, 0.9));
   text-transform: uppercase;
   border-radius: 4px;
 }
@@ -207,18 +203,6 @@ img {
   text-align: center;
   font-weight: lighter;
   padding: 20px 0px;
-}
-
-.hero:after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  opacity: 0.2;
-  z-index: -1;
 }
 
 .about {
@@ -338,12 +322,14 @@ img {
 }
 
 .why-us {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   padding: 4rem 2rem;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background: url("/img/why-us.jpg") no-repeat;
+  background: url("/img/why.jpg") no-repeat;
 }
 
 .why-us h1 {
@@ -365,8 +351,30 @@ img {
   text-align: start;
 }
 
-.why-us .counting .number {
-  font-size: 100px;
+.why-us .counting {
+  align-items: center;
+}
+
+.why-us .counting .numbers {
+  font-size: 48px;
+  color: white;
+}
+
+.why-us .counting p {
+  color: #b1976b;
+}
+
+.hero::after,
+.why-us::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: -1;
 }
 
 @keyframes hamburger_puls {
