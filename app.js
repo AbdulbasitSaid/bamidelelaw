@@ -1,11 +1,14 @@
-let app = document.getElementById('app');
-let toggleBtn = document.querySelector('.btn');
+let app = document.querySelector('.app');
+let toggleBtn = document.querySelector('.nav-btn');
+let sideNav = document.querySelector('.side-nav');
+let closeBtn = document.querySelector('.close-nav');
 
-document.querySelector('.nav-btn').addEventListener('click', (e) => {
+app.addEventListener('click', (e) => {
     // e.preventDefault();
-    document.querySelector('.app').classList.toggle('show-nav');
+    app.classList.toggle('show-nav');
+    sideNav.classList.toggle('show');
 });
-document.querySelector('.close-nav').addEventListener('click', (e) => {
+closeBtn.addEventListener('click', (e) => {
     // e.preventDefault();
     document.querySelector('.app').classList.toggle('show-nav');
 });

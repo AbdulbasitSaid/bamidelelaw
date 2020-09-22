@@ -1,5 +1,5 @@
 @import "config.scss";
-$side-nav-width: 250px;
+$side-nav-width: 230px;
 
 body {
   overflow-x: hidden;
@@ -48,7 +48,12 @@ img {
   width: $side-nav-width;
   background-color: $text-color;
   position: absolute;
+  overflow-x: hidden;
+  display: none;
   z-index: 100;
+}
+.side-nav.show {
+  display: block;
 }
 .container {
   min-height: 70vh;

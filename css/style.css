@@ -52,18 +52,24 @@ img {
 }
 
 .app.show-nav {
-  transform: translateX(-250px);
+  transform: translateX(-230px);
 }
 
 .side-nav {
   height: 100vh;
   top: 0;
   float: right;
-  right: -250px;
-  width: 250px;
+  right: -230px;
+  width: 230px;
   background-color: #555555;
   position: absolute;
+  overflow-x: hidden;
+  display: none;
   z-index: 100;
+}
+
+.side-nav.show {
+  display: block;
 }
 
 .container {
