@@ -330,6 +330,7 @@ img {
   flex-flow: column;
   align-items: center;
   background: url("/img/why.jpg") no-repeat;
+  transform: scale(1);
 }
 
 .why-us h1 {
@@ -353,6 +354,7 @@ img {
 
 .why-us .counting {
   align-items: center;
+  text-align: center;
 }
 
 .why-us .counting .numbers {
