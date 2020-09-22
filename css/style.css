@@ -144,8 +144,8 @@ img {
 }
 
 .hero {
-  height: 80vh;
-  padding: 4rem;
+  min-height: 70vh;
+  padding: 10rem 2em;
   color: white;
   background-repeat: no-repeat;
   position: relative;
@@ -223,12 +223,12 @@ img {
 }
 
 .about .about-content {
-  padding: 40px 20px;
+  padding: 10px 20px;
   border-radius: 4px;
   position: absolute;
-  min-height: 60vh;
+  min-height: 50vh;
   width: 80vw;
-  transform: translateY(-5rem);
+  transform: translateY(-2em);
   z-index: 2;
   text-align: start;
 }

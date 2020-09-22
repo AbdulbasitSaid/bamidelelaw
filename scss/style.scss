@@ -35,6 +35,7 @@ img {
 }
 .app {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
+  // overflow-x: hidden;
 }
 .app.show-nav {
   transform: translateX(-$side-nav-width);
@@ -118,11 +119,11 @@ img {
   }
 }
 .hero {
-  height: 80vh;
+  min-height: 70vh;
   p {
     color: white;
   }
-  padding: 4rem;
+  padding: 10rem 2em;
   color: white;
   background-repeat: no-repeat;
   position: relative;
@@ -191,12 +192,12 @@ img {
   position: relative;
   justify-content: center;
   .about-content {
-    padding: 40px 20px;
+    padding: 10px 20px;
     border-radius: 4px;
     position: absolute;
-    min-height: 60vh;
+    min-height: 50vh;
     width: 80vw;
-    transform: translateY(-5rem);
+    transform: translateY(-2em);
     z-index: 2;
     text-align: start;
 
