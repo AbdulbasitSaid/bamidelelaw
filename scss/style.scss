@@ -41,7 +41,7 @@ img {
   transform: translateX(-$side-nav-width);
 }
 .side-nav {
-  height: 100vh;
+  height: 100%;
   top: 0;
   float: right;
   right: -$side-nav-width;
@@ -293,6 +293,20 @@ img {
 }
 .why-us {
   min-height: 100vh;
+  padding: 4rem 2rem;
+  h1 {
+    text-transform: capitalize;
+    font-size: 36px;
+    text-align: center;
+  }
+  h4 {
+    color: $primary-color;
+    font-weight: 100;
+    padding: 1rem;
+  }
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   background: url("/img/why-us.jpg") no-repeat;
 }
 // animations

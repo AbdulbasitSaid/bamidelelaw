@@ -3,7 +3,7 @@ let toggleBtn = document.querySelector('.nav-btn');
 let sideNav = document.querySelector('.side-nav');
 let closeBtn = document.querySelector('.close-nav');
 
-app.addEventListener('click', (e) => {
+toggleBtn.addEventListener('click', (e) => {
     // e.preventDefault();
     app.classList.toggle('show-nav');
     sideNav.classList.toggle('show');
