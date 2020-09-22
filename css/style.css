@@ -91,7 +91,7 @@ img {
   height: 50px;
   width: 50px;
   display: inline-block;
-  border: 3px solid #555555;
+  border: 3px solid #b1976b;
   border-radius: 2px;
   position: relative;
   display: flex;
@@ -109,7 +109,7 @@ img {
   height: 100%;
   width: 100%;
   border-radius: 2px;
-  border: 3px solid #555555;
+  border: 3px solid #b1976b;
   animation: hamburger_puls 1s ease infinite;
 }
 
@@ -117,7 +117,7 @@ img {
   height: 2px;
   width: 30px;
   position: relative;
-  background-color: #555555;
+  background-color: #b1976b;
   z-index: -1;
 }
 
@@ -128,7 +128,7 @@ img {
   height: 100%;
   width: 100%;
   left: 0;
-  background-color: #555555;
+  background-color: #b1976b;
   transition: 0.3s ease;
   transition-property: top, bottom;
 }
