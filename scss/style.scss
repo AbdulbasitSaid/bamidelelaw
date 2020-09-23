@@ -7,23 +7,45 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-.loader {
+.loader,
+.loader1,
+.loader2,
+.loader3 {
   padding: 10px;
   position: absolute;
   position: fixed;
   z-index: 110;
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   margin: auto;
-  top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   img {
     width: 100%;
     height: 100%;
   }
-  animation: spin 2s linear infinite;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+$top: 0;
+.loader {
+  top: $top;
+  animation-timing-function: linear;
+}
+.loader1 {
+  top: 140px;
+  animation-timing-function: ease;
+}
+.loader2 {
+  top: 280px;
+  animation-timing-function: ease-in;
+}
+.loader3 {
+  top: 400px;
+  animation-timing-function: bezier(0, 0.2, 0.8, 1);
+  animation-duration: 3s;
+  animation-name: spin3;
 }
 .hide {
   display: none;
@@ -374,6 +396,22 @@ img {
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+@keyframes spin3 {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
   }
 }
 // end animations
