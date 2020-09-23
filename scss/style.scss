@@ -117,9 +117,10 @@ img {
   padding: 10px 2rem;
   .bana {
     height: 50px;
+    width: 50px;
     img {
-      height: 40px;
-      width: 40px;
+      height: 100%;
+      width: 100%;
     }
   }
   .nav-btn {

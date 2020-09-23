@@ -142,11 +142,12 @@ img {
 
 .navbar .bana {
   height: 50px;
+  width: 50px;
 }
 
 .navbar .bana img {
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar .nav-btn {
