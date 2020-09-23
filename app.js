@@ -9,7 +9,7 @@ app.classList.add('hide');
 setTimeout(() => {
     loader.classList.add('hide');
     app.classList.remove('hide');
-}, 3000);
+}, 1500);
 
 
 toggleBtn.addEventListener('click', (e) => {
