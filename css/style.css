@@ -28,7 +28,7 @@ body {
   left: 0;
   right: 0;
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
@@ -56,7 +56,8 @@ body {
 }
 
 .loader3 {
-  top: 400px;
+  top: 0;
+  bottom: 0;
   animation-timing-function: bezier(0, 0.2, 0.8, 1);
   animation-duration: 3s;
   animation-name: spin3;
@@ -64,6 +65,7 @@ body {
 
 .hide {
   display: none;
+  transition: display;
 }
 
 .show {

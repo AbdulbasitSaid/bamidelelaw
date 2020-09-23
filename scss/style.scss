@@ -25,7 +25,7 @@ body {
     height: 100%;
   }
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 $top: 0;
@@ -42,13 +42,15 @@ $top: 0;
   animation-timing-function: ease-in;
 }
 .loader3 {
-  top: 400px;
+  top: 0;
+  bottom: 0;
   animation-timing-function: bezier(0, 0.2, 0.8, 1);
   animation-duration: 3s;
   animation-name: spin3;
 }
 .hide {
   display: none;
+  transition: display;
 }
 .show {
   display: block;
