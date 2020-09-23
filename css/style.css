@@ -65,7 +65,7 @@ body {
 
 .hide {
   display: none;
-  transition: display;
+  transition: all;
 }
 
 .show {
@@ -111,6 +111,7 @@ img {
 
 .side-nav {
   height: 100%;
+  padding: 1rem;
   top: 0;
   float: right;
   right: -230px;
