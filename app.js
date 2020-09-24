@@ -6,10 +6,12 @@ let loader = document.querySelector('.loader3');
 let navbar = document.querySelector('.navbar');
 
 app.classList.add('hide');
-
+sideNav.classList.add('hide');
 setTimeout(() => {
     loader.classList.add('hide');
     app.classList.remove('hide');
+    sideNav.classList.remove('hide');
+
 }, 1500);
 
 

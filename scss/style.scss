@@ -73,8 +73,7 @@ $top: 0;
   animation-name: spin3;
 }
 .hide {
-  visibility: hidden;
-  transition: 0s visibility linear;
+  display: none;
 }
 .show {
   visibility: visible;

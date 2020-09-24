@@ -90,8 +90,7 @@ body {
 }
 
 .hide {
-  visibility: hidden;
-  transition: 0s visibility linear;
+  display: none;
 }
 
 .show {
