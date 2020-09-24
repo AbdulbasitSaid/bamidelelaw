@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins,arial";
@@ -22,9 +26,10 @@ body {
   right: 0;
   width: 230px;
   background-color: #555555;
-  position: absolute;
+  position: fixed;
   overflow-x: hidden;
-  z-index: 100;
+  z-index: -10;
+  transition: 0.1s visibility ease-out;
 }
 
 .side-nav .nav-items {
@@ -32,7 +37,7 @@ body {
 }
 
 .side-nav.show {
-  display: block;
+  z-index: 1;
 }
 
 .loader,
@@ -85,12 +90,12 @@ body {
 }
 
 .hide {
-  display: none;
-  transition: all;
+  visibility: hidden;
+  transition: 0s visibility linear;
 }
 
 .show {
-  display: block;
+  visibility: visible;
 }
 
 .shadow {
@@ -123,6 +128,7 @@ img {
 }
 
 .app {
+  background-color: #fff;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
 }
 
@@ -136,7 +142,6 @@ img {
 }
 
 .navbar {
-  padding: 10px;
   width: 100vw;
   position: fixed;
   display: flex;

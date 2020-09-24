@@ -3,6 +3,7 @@ let toggleBtn = document.querySelector('.nav-btn');
 let sideNav = document.querySelector('.side-nav');
 let closeBtn = document.querySelector('.close-nav');
 let loader = document.querySelector('.loader3');
+let navbar = document.querySelector('.navbar');
 
 app.classList.add('hide');
 

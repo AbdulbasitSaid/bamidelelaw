@@ -1,5 +1,8 @@
 @import "config.scss";
 $side-nav-width: 230px;
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   overflow-x: hidden;
@@ -15,16 +18,18 @@ body {
   right: 0;
   width: $side-nav-width;
   background-color: $text-color;
-  position: absolute;
+  position: fixed;
   overflow-x: hidden;
-  // display: none;
-  z-index: 100;
+  // visibility: hidden;
+  z-index: -10;
+  transition: 0.1s visibility ease-out;
+
   .nav-items {
     position: sticky;
   }
 }
 .side-nav.show {
-  display: block;
+  z-index: 1;
 }
 .loader,
 .loader1,
@@ -68,11 +73,11 @@ $top: 0;
   animation-name: spin3;
 }
 .hide {
-  display: none;
-  transition: all;
+  visibility: hidden;
+  transition: 0s visibility linear;
 }
 .show {
-  display: block;
+  visibility: visible;
 }
 .shadow {
   box-shadow: 0 -11.6px 113.6px -54px rgba(0, 0, 0, 0.021),
@@ -101,6 +106,7 @@ img {
   background-repeat: no-repeat;
 }
 .app {
+  background-color: #fff;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
   // overflow-x: hidden;
 }
@@ -114,7 +120,6 @@ img {
 }
 
 .navbar {
-  padding: 10px;
   width: 100vw;
   position: fixed;
   display: flex;
