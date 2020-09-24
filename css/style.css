@@ -30,7 +30,6 @@ body {
   background-color: #555555;
   position: fixed;
   overflow-x: hidden;
-  transition: 0.1s visibility ease-out;
 }
 
 .side-nav .nav-items {
@@ -46,6 +45,16 @@ body {
 
 .side-nav .close-nav::after, .side-nav .close-nav::before {
   position: absolute;
+}
+
+.side-nav a {
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.side-nav a:active {
+  font-weight: bold;
+  color: pink;
 }
 
 .side-nav.show {

@@ -22,7 +22,6 @@ body {
   background-color: $text-color;
   position: fixed;
   overflow-x: hidden;
-  transition: 0.1s visibility ease-out;
   // z-index: -100;
   .nav-items {
     position: sticky;
@@ -35,6 +34,14 @@ body {
     &::after,
     &::before {
       position: absolute;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    color: #fafafa;
+    &:active {
+      font-weight: bold;
+      color: pink;
     }
   }
 }
