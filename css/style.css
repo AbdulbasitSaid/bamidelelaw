@@ -36,6 +36,13 @@ body {
   position: sticky;
 }
 
+.side-nav .close-nav {
+  background-color: pink;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4rem;
+}
+
 .side-nav.show {
   z-index: 1;
 }
@@ -147,7 +154,7 @@ img {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 10px 2rem;
+  padding: 1.5rem;
   z-index: 10;
   overflow-x: hidden;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
