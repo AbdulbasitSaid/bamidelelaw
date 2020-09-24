@@ -25,11 +25,12 @@ body {
   float: right;
   right: 0;
   width: 60vw;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
+  transform: translateX(60vw);
   background-color: #555555;
   position: fixed;
   overflow-x: hidden;
   transition: 0.1s visibility ease-out;
-  z-index: -100;
 }
 
 .side-nav .nav-items {
@@ -43,8 +44,12 @@ body {
   margin-bottom: 4rem;
 }
 
+.side-nav .close-nav::after, .side-nav .close-nav::before {
+  position: absolute;
+}
+
 .side-nav.show {
-  z-index: 1;
+  transform: translateX(0);
 }
 
 .loader,

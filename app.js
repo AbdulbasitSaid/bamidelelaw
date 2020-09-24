@@ -20,9 +20,8 @@ toggleBtn.addEventListener('click', (e) => {
     // e.preventDefault();
     app.classList.toggle('show-nav');
     navbar.classList.toggle('show-nav');
-    setTimeout(() => {
-        sideNav.classList.toggle('show')
-    }, 1000)
+    sideNav.classList.toggle('show')
+
 });
 closeBtn.addEventListener('click', (e) => {
     app.classList.toggle('show-nav');
