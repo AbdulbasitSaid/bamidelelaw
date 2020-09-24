@@ -18,7 +18,9 @@ setTimeout(() => {
 toggleBtn.addEventListener('click', (e) => {
     // e.preventDefault();
     app.classList.toggle('show-nav');
-    sideNav.classList.toggle('show');
+    navbar.classList.toggle('show-nav')
+
+    // sideNav.classList.toggle('show');
 });
 closeBtn.addEventListener('click', (e) => {
     // e.preventDefault();

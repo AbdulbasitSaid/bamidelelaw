@@ -24,11 +24,11 @@ body {
   top: 0;
   float: right;
   right: 0;
-  width: 230px;
+  width: 60vw;
   background-color: #555555;
   position: fixed;
   overflow-x: hidden;
-  z-index: -10;
+  z-index: -100;
   transition: 0.1s visibility ease-out;
 }
 
@@ -132,7 +132,7 @@ img {
 }
 
 .app.show-nav {
-  transform: translateX(-230px);
+  transform: translateX(-60vw);
 }
 
 .container {
@@ -149,6 +149,7 @@ img {
   background-color: white;
   padding: 10px 2rem;
   z-index: 10;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
 }
 
 .navbar .bana {
@@ -159,6 +160,10 @@ img {
 .navbar .bana img {
   height: 100%;
   width: 100%;
+}
+
+.navbar.show-nav {
+  transform: translateX(-60vw);
 }
 
 .navbar .nav-btn {

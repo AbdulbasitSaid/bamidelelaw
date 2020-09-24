@@ -1,5 +1,5 @@
 @import "config.scss";
-$side-nav-width: 230px;
+$side-nav-width: 60vw;
 html {
   scroll-behavior: smooth;
 }
@@ -20,8 +20,7 @@ body {
   background-color: $text-color;
   position: fixed;
   overflow-x: hidden;
-  // visibility: hidden;
-  z-index: -10;
+  z-index: -100;
   transition: 0.1s visibility ease-out;
 
   .nav-items {
@@ -127,6 +126,7 @@ img {
   background-color: white;
   padding: 10px 2rem;
   z-index: 10;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
   .bana {
     height: 50px;
     width: 50px;
@@ -134,6 +134,9 @@ img {
       height: 100%;
       width: 100%;
     }
+  }
+  &.show-nav {
+    transform: translateX(-$side-nav-width);
   }
   .nav-btn {
     height: 50px;
