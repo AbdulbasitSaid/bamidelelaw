@@ -142,6 +142,10 @@ img {
   transform: translateX(-60vw);
 }
 
+.app.close {
+  transform: translateX(60vw);
+}
+
 .container {
   min-height: 70vh;
   width: 100%;
@@ -172,6 +176,10 @@ img {
 
 .navbar.show-nav {
   transform: translateX(-60vw);
+}
+
+.navbar.close {
+  transform: translateX(60vw);
 }
 
 .navbar .nav-btn {

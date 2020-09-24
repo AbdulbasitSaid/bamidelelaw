@@ -116,7 +116,9 @@ img {
 .app.show-nav {
   transform: translateX(-$side-nav-width);
 }
-
+.app.close {
+  transform: translateX($side-nav-width);
+}
 .container {
   min-height: 70vh;
   width: 100%;
@@ -143,6 +145,9 @@ img {
   }
   &.show-nav {
     transform: translateX(-$side-nav-width);
+  }
+  &.close {
+    transform: translateX($side-nav-width);
   }
   .nav-btn {
     height: 50px;
