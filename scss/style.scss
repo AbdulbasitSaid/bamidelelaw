@@ -12,7 +12,7 @@ body {
 }
 .side-nav {
   height: 100%;
-  padding: 1rem;
+  padding: 4rem 3rem;
   top: 0;
   float: right;
   right: 0;
@@ -20,7 +20,6 @@ body {
   background-color: $text-color;
   position: fixed;
   overflow-x: hidden;
-  z-index: -100;
   transition: 0.1s visibility ease-out;
 
   .nav-items {
@@ -118,7 +117,7 @@ img {
 }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   display: flex;
   align-items: center;
@@ -126,6 +125,7 @@ img {
   background-color: white;
   padding: 10px 2rem;
   z-index: 10;
+  overflow-x: hidden;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) transform;
   .bana {
     height: 50px;
