@@ -21,7 +21,7 @@ body {
   position: fixed;
   overflow-x: hidden;
   transition: 0.1s visibility ease-out;
-
+  z-index: -100;
   .nav-items {
     position: sticky;
   }
