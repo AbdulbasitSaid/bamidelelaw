@@ -7,6 +7,25 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.side-nav {
+  height: 100%;
+  padding: 1rem;
+  top: 0;
+  float: right;
+  right: 0;
+  width: $side-nav-width;
+  background-color: $text-color;
+  position: absolute;
+  overflow-x: hidden;
+  // display: none;
+  z-index: 100;
+  .nav-items {
+    position: sticky;
+  }
+}
+.side-nav.show {
+  display: block;
+}
 .loader,
 .loader1,
 .loader2,
@@ -88,22 +107,7 @@ img {
 .app.show-nav {
   transform: translateX(-$side-nav-width);
 }
-.side-nav {
-  height: 100%;
-  padding: 1rem;
-  top: 0;
-  float: right;
-  right: -$side-nav-width;
-  width: $side-nav-width;
-  background-color: $text-color;
-  position: absolute;
-  overflow-x: hidden;
-  display: none;
-  z-index: 100;
-}
-.side-nav.show {
-  display: block;
-}
+
 .container {
   min-height: 70vh;
   width: 100%;
@@ -111,11 +115,14 @@ img {
 
 .navbar {
   padding: 10px;
-  width: 100%;
+  width: 100vw;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
   padding: 10px 2rem;
+  z-index: 10;
   .bana {
     height: 50px;
     width: 50px;
@@ -134,7 +141,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 10;
     cursor: pointer;
     transform: scale(0.8);
     margin-right: 20px;
