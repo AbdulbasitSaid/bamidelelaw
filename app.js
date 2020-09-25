@@ -6,18 +6,15 @@ let loader = document.querySelector('.loader3')
 let navbar = document.querySelector('.navbar')
 //
 let navItems = document.getElementById('nav-items')
-let navlinks = navItems.getElementsByClassName('link')
+let navlinks = document.querySelectorAll('a')
 
-
-for (let i = 0; i < navlinks.length; i++) {
-    navlinks[i].addEventListener('click', () => {
-        let current = document.getElementsByClassName('current')
-        console.log(current)
-        console.log('greater')
-        current[0].className = current[0].className.replace('current', ' ')
-        this.className += 'current'
+Array.from(navlinks).forEach(item => {
+    item.addEventListener('click', () => {
+        let selected = document.getElementsByClassName('current')
+        selected[0].className = selected[0].className.replace('current', '')
+        item.className += 'current'
     })
-}
+})
 
 app.classList.add('hide');
 sideNav.classList.add('hide')

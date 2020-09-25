@@ -18,6 +18,18 @@ body {
   overflow-x: hidden;
 }
 
+.current,
+link:hover {
+  font-weight: bold;
+  color: #fff;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fafafa;
+}
+
 .side-nav {
   height: 100%;
   padding: 4rem 3rem;
@@ -30,18 +42,6 @@ body {
   background-color: #555555;
   position: fixed;
   overflow-x: hidden;
-}
-
-.side-nav .nav-items .current,
-.side-nav .nav-items link:hover {
-  font-weight: bold;
-  color: #fff;
-}
-
-.side-nav .nav-items a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fafafa;
 }
 
 .side-nav .close-nav {
