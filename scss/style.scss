@@ -24,7 +24,16 @@ body {
   overflow-x: hidden;
   // z-index: -100;
   .nav-items {
-    position: sticky;
+    .current,
+    link:hover {
+      font-weight: bold;
+      color: #fff;
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fafafa;
+    }
   }
   .close-nav {
     background-color: pink;
@@ -34,14 +43,6 @@ body {
     &::after,
     &::before {
       position: absolute;
-    }
-  }
-  a {
-    text-transform: uppercase;
-    color: #fafafa;
-    &:active {
-      font-weight: bold;
-      color: pink;
     }
   }
 }
@@ -101,11 +102,7 @@ $top: 0;
     0 3.2px 138.3px -54px rgba(0, 0, 0, 0.039),
     0 33px 91px -54px rgba(0, 0, 0, 0.06);
 }
-a {
-  text-decoration: none;
-  color: white;
-  font-size: large;
-}
+
 p {
   text-align: center;
   line-height: 2em;

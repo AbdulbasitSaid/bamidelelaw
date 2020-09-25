@@ -32,8 +32,16 @@ body {
   overflow-x: hidden;
 }
 
-.side-nav .nav-items {
-  position: sticky;
+.side-nav .nav-items .current,
+.side-nav .nav-items link:hover {
+  font-weight: bold;
+  color: #fff;
+}
+
+.side-nav .nav-items a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .side-nav .close-nav {
@@ -45,16 +53,6 @@ body {
 
 .side-nav .close-nav::after, .side-nav .close-nav::before {
   position: absolute;
-}
-
-.side-nav a {
-  text-transform: uppercase;
-  color: #fafafa;
-}
-
-.side-nav a:active {
-  font-weight: bold;
-  color: pink;
 }
 
 .side-nav.show {
@@ -120,12 +118,6 @@ body {
 
 .shadow {
   box-shadow: 0 -11.6px 113.6px -54px rgba(0, 0, 0, 0.021), 0 -7px 137px -54px rgba(0, 0, 0, 0.03), 0 3.2px 138.3px -54px rgba(0, 0, 0, 0.039), 0 33px 91px -54px rgba(0, 0, 0, 0.06);
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: large;
 }
 
 p {
